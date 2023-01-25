@@ -57,6 +57,17 @@ body {
 .project {
     max-height: 20rem;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.projectIcon {
+    max-width: 2rem;
+    height: auto;
+    float: right;
+    margin-right: 1rem;
 }
 
 .right-info {
@@ -71,6 +82,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    border: 2px solid red;
 }
 
 .announcements > p, .trending > p {
