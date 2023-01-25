@@ -12,7 +12,7 @@
 
 body {
     display: grid;
-    grid-template: 1fr 5fr / 1.5fr 6fr;
+    grid-template: 10rem 1fr / 1.5fr 6fr;
     min-height: 100vh;
 }
 
@@ -20,6 +20,7 @@ body {
     display: grid;
     grid-template: auto 1fr / 2fr 1fr;
     align-items: center;
+    /* max-height: 10rem; */
 }
 
 .sidebar {
@@ -60,6 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 1.5rem;
     padding: 1rem;
 }
 
