@@ -30,10 +30,18 @@ body {
     align-content: flex-start;
     justify-content: center;
     gap: 3rem;
+    color: white;
+    font-size: 2rem;
 }
 
 .title {
    margin-top: 3rem;
+   font-size: 3rem;
+}
+
+.iconify {
+    width: 20px;
+    color:red;
 }
 
 .mainContent {
