@@ -82,7 +82,7 @@ input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 4rem;
+    column-gap: 2rem;
 }
 
 .userSettings p {
@@ -93,7 +93,7 @@ input:focus {
 .newAction {
     display: flex;
     justify-content: center;
-    column-gap: 3rem;
+    column-gap: 2rem;
 }
 
 .actionItem {
