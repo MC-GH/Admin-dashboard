@@ -30,7 +30,7 @@ body {
 form {
     display: flex;
     flex: 1;
-    padding: 1rem;
+    padding: 2rem;
     gap: 1rem;
 }
 
@@ -48,7 +48,7 @@ button:hover {
 input {
     flex: 1;
     background-color: var(--bgwhite);
-    border: none;
+    border: 1px solid lightgrey;
     border-radius: 8px;
     font-size: 1rem;
 }
@@ -60,14 +60,48 @@ input:focus {
 
 .welcome {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     column-gap: 2rem;
     padding: 1rem;
 }
 
+.welcomeText {
+    font-size: 1.2rem;
+}
+
+.welcomeText p:last-of-type  {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 .profilepicture {
     max-width: 5rem;
+}
+
+.userSettings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.userSettings p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.newAction {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.actionItem {
+    padding: 0.6rem 2.5rem;
+    border-radius: 10px;
+    background-color: var(--bluemain);
+    color: white;
+    font-weight: bold;
 }
 
 .header .iconify {
@@ -90,11 +124,13 @@ input:focus {
 
 .title {
    margin-top: 3rem;
-   font-size: 3rem;
+   font-size: 3.8rem;
    display: flex;
    align-items: center;
    justify-content: center;
    padding: 0 1rem;
+   text-shadow: 5px 1px 10px grey;
+   font-variant: small-caps;
 }
 
 .iconify {
@@ -112,8 +148,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    width: 20rem;
-    justify-self: center;
+    margin-left: 1.5rem;
 }
 
 .menu-item {
@@ -131,6 +166,8 @@ input:focus {
 .projects {
     display: grid;
     grid-template: auto 1fr 1fr 1fr / repeat(auto-fit, minmax(25rem, 1fr));
+    grid-auto-flow: rows;
+    grid-auto-rows: 1fr;
     gap: 2rem;
     margin: 2rem;
 }
