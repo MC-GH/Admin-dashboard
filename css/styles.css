@@ -305,9 +305,9 @@ input:focus {
     }
 
     .sidebar {
+        gap: 0;
         display: grid;
         grid-column: 1 / end;
-        justify-content: center;
     }
 
     .right-info {
@@ -315,25 +315,48 @@ input:focus {
     }
 
     .title {
+        justify-self: center;
+        margin: 0;
     }
 
-    .menu {
-        /* display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 1rem; */
+    .menu, .menusettings {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template:  auto / repeat(2, 1fr);
+        /* padding: 1rem; */
+        justify-self: center;
+        justify-items: center;
         font-size: 1rem;
+        width: 100%;
     }
 
-    .menu-item {
+    .menusettings {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
     }
 
     .menusettings, .title, .menu {
         margin-left: 0;
     }
 
+    .welcome {
+        justify-items: center;
+        display: none;
+    }
+
+    form {
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .userSettings {
+        padding: 0.5rem;
+    }
+
+    .newAction {
+        padding: 0 0.5rem 1rem 0.5rem;
+        column-gap: 0.5rem;
+    }
+    
     .mainContent {
         grid-column: 1 / end;
         grid-template-columns: 1fr;
